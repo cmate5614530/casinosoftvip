@@ -1,13 +1,11 @@
 <?php
-
 //set language variable
 require_once('ipdetect.php');
-if(!isset($_SESSION['lang'])) $_SESSION['lang'] = 'english';
+
 if(isset($_POST['lang']) && !empty($_POST['lang'])){
     $_SESSION['lang'] = $_POST['lang'];
 
     if(isset($_SESSION['lang']) && $_SESSION['lang'] != $_POST['lang']){
-        $_SESSION['lang'] = $_POST['lang'];
         echo "<script type='text/javascript'> location.reload(); </script>";
     }
 }
@@ -78,10 +76,13 @@ if(isset($_SESSION['lang'])){
                         <a aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown" class="dropdown-toggle" href="#">
                             <span id="selected"></span><span class="caret"></span></a>
                         <ul class="dropdown-menu" style="min-width: 6rem;">
-                            <li><a href="#" data-lang="english"><img src="images/en.png" width="28px"> EN</a></li>
-                            <li><a href="#" data-lang="spanish"><img src="images/es.png" width="28px"> ES</a></li>
+                            <li><a style="cursor: pointer;" data-lang="english"><img src="images/en.png" width="28px"> EN</a></li>
+                            <li><a style="cursor: pointer;" data-lang="spanish"><img src="images/es.png" width="28px"> ES</a></li>
                         </ul>
                     </div>
+                    <form method='POST' action='' id='form_lang_top' >
+                        <input type="hidden" name="lang" id="lang_top" value="english">
+                    </form>
                 </li>
             </ul> 
             <!-- Left Nav bar -->
@@ -365,12 +366,14 @@ if(isset($_SESSION['lang'])){
                 <a href="index.php"><img src="images/logo.png" alt=""></a> 
                 <div class="language">
                     <h6><?php echo $lang['Language'];?></h6>
-                    <div class="language_select">
-                        <select class="post_select" name="lang" id="lang" onchange="changeLang();">
-                            <option value="english" <?php if(isset($_SESSION['lang']) && $_SESSION['lang'] == 'english'){ echo "selected"; } ?>>English (US)</option>
-                            <option value="spanish" <?php if(isset($_SESSION['lang']) && $_SESSION['lang'] == 'spanish'){ echo "selected"; } ?>>Español</option>
-                        </select>
-                    </div>
+                    <form method='POST' action='' id='form_lang' >
+                        <div class="language_select">
+                            <select class="post_select" name="lang" id="lang" onchange="changeLang();">
+                                <option value="english" <?php if(isset($_SESSION['lang']) && $_SESSION['lang'] == 'english'){ echo "selected"; } ?>>English (US)</option>
+                                <option value="spanish" <?php if(isset($_SESSION['lang']) && $_SESSION['lang'] == 'spanish'){ echo "selected"; } ?>>Español</option>
+                            </select>
+                        </div>
+                    </form>
                 </div> 
                 <ul class="footer_menu">
                     <li><a href="index.php"><?php echo $lang['Home'];?></a></li>
@@ -445,26 +448,13 @@ if(isset($_SESSION['lang'])){
     $('.dropdown-menu a').click(function(){
         $('#selected').html($(this).html());
         let lang = $(this).data('lang');
-        $.ajax({
-            type:"POST",
-            url:"<?php echo $_SERVER['PHP_SELF'];?>",
-            data:{lang:lang},
-            success:function () {
-                location.reload();
-            }
-        });
+        $('#lang_top').val(lang);
+        $('#form_lang_top').submit();
+
     });
 
-    function changeLang() {
-        let lang = $('#lang').val();
-        $.ajax({
-            type:"POST",
-            url:"<?php echo $_SERVER['PHP_SELF'];?>",
-            data:{lang:lang},
-            success:function () {
-                location.reload();
-            }
-        });
+    function changeLang(){
+        $('#form_lang').submit();
     }
 </script>
 <script type="text/javascript">

@@ -84,8 +84,8 @@ function ip_info($ip = NULL, $purpose = "location", $deep_detect = TRUE) {
 }
 
 $location = ip_info(get_client_ip(), "Location");
-if($location['continent_code'] == 'SA' || $location['country'] == 'Belize' || $location['country'] == 'El Salvador' || $location['country'] == 'Hondurus'
+if($location && !isset($_SESSION['lang']) && ($location['continent_code'] == 'SA' || $location['country'] == 'Belize' || $location['country'] == 'El Salvador' || $location['country'] == 'Hondurus'
     || $location['country'] == 'Panama' || $location['country'] == 'Costa Rica' || $location['country'] == 'Guatemala' || $location['country'] == 'Nicaragua'
-    || $location['country'] == 'Mexico'){
+    || $location['country'] == 'Mexico')){
     $_SESSION['lang'] = 'spanish';
 }

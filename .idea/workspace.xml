@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e1c98da2-b0e6-4930-8e53-a947384fdbaf" name="Default Changelist" comment="" />
+    <list default="true" id="e1c98da2-b0e6-4930-8e53-a947384fdbaf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipdetect.php" beforeDir="false" afterPath="$PROJECT_DIR$/ipdetect.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio.php" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pricing.php" beforeDir="false" afterPath="$PROJECT_DIR$/pricing.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tyc.php" beforeDir="false" afterPath="$PROJECT_DIR$/tyc.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,12 +22,16 @@
       <executable />
     </execution>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="PhpServers">
     <servers>
       <server host="localhost" id="6ec4ddd6-7b45-412e-8a0e-a053de44dde3" name="localhost" />
     </servers>
   </component>
   <component name="ProjectId" id="1t3EhZ1kYAbYdqZY0j20C6OE7Ie" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -25,6 +39,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
@@ -56,6 +71,9 @@
       <workItem from="1622058134367" duration="15048000" />
       <workItem from="1622078337141" duration="2723000" />
       <workItem from="1622089416888" duration="1635000" />
+      <workItem from="1622091084023" duration="384000" />
+      <workItem from="1622121963727" duration="6023000" />
+      <workItem from="1622142443057" duration="5189000" />
     </task>
     <servers />
   </component>
@@ -63,10 +81,18 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="552" y="180" key="#Deployment" timestamp="1622126747359">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="180" key="#Deployment/0.0.1920.1040/-1920.5.1920.1040@0.0.1920.1040" timestamp="1622126747359" />
     <state width="419" height="466" key="DebuggerActiveHint" timestamp="1622079461399">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="419" height="466" key="DebuggerActiveHint/0.0.1920.1040/-1920.5.1920.1040@0.0.1920.1040" timestamp="1622079461399" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1622146439170">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040/-1920.5.1920.1040@0.0.1920.1040" timestamp="1622146439170" />
     <state width="1881" height="348" key="GridCell.Tab.0.bottom" timestamp="1622081814162">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -115,6 +141,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1881" height="348" key="GridCell.Tab.2.right/0.0.1920.1040/-1920.5.1920.1040@0.0.1920.1040" timestamp="1622081814163" />
+    <state x="841" y="252" key="ftp.server.browser" timestamp="1622126744293">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="841" y="252" key="ftp.server.browser/0.0.1920.1040/-1920.5.1920.1040@0.0.1920.1040" timestamp="1622126744293" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1622004368435">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
